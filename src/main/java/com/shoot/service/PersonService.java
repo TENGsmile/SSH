@@ -1,5 +1,7 @@
 package com.shoot.service;
 
+import com.shoot.bean.Person;
+
 public interface PersonService {
-    Long savePerson();
+    Long savePerson(Person person);
 }

@@ -13,12 +13,9 @@ public class PersonServiceImpl implements PersonService {
     @Autowired
     private PersonDao son;
 
-    public Long savePerson() {
-        Person person = new Person();
-        person.setUsername("XRog");
-        person.setPhone("18381005946");
-        person.setAddress("chenDu");
-        person.setRemark("this is XRog");
+    public Long savePerson(Person person) {
+
+
         return son.save(person);
     }
 }

@@ -27,6 +27,10 @@ public class Person {
 
     @Column(name = "created")
     private Long created = System.currentTimeMillis();
+    @Column(name = "password")
+    private  String password;
+
+
 
 
 
@@ -79,5 +83,13 @@ public class Person {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
